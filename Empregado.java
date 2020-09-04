@@ -6,7 +6,7 @@ public class Empregado{
     private double comissao;
     private double bonus;
 
-    public double calculaSalario{
+    public double calculaSalario(){
         switch(tipo){
             case 1: 
             return salario;
@@ -17,6 +17,26 @@ public class Empregado{
             default:
             return 0;
         }
+    }
+    public double getBonus() {
+        return bonus;
+    }
+    public double getComissao() {
+        return comissao;
+    }public double getSalario() {
+        return salario;
+    }public void setBonus(double bonus) {
+        this.bonus = bonus;
+    }public void setComissao(double comissao) {
+        this.comissao = comissao;
+    }public void setSalario(double salario) {
+        this.salario = salario;
+    }
+    public int getTipo() {
+        return tipo;
+    }
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
     }
     public String getNome() {
         return nome;
